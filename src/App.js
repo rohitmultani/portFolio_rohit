@@ -8,7 +8,7 @@ function App() {
     <div>
       <Header/>
       <Skill/>
-      {/* <Main/> */}
+  
     </div>
   );
 }

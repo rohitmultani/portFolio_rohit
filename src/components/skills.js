@@ -6,6 +6,7 @@ import javascript from '../Images/javascript.png'
 import bootstrap from '../Images/bootstrap.png'
 import react from '../Images/react.png'
 import cpp from '../Images/cpp.png'
+import python from '../Images/python.png'
 const Skill =()=>{
     return(
         <Fragment>
@@ -31,7 +32,7 @@ const Skill =()=>{
 <div>
 <img src={cpp} alt="cpp"/>
 </div>
-<div></div>
+<div><img src={python} alt="python"/></div>
 </div>
         </Fragment>
     );

@@ -4,12 +4,16 @@ import classes from "./Header.module.css";
 import menu from '../svg/menu.svg'
 import menuCLose from '../svg/menuClose.svg'
 import SocialMedia from "./socialMedia";
+import NavBar from "./NavBar";
 // import classes from "./Main.module.css";
 
- const Header =()=>{
+ const Header =(props)=>{
      const [menuOpen,isMenuOpen]=useState(false);
      const changeMenuHanlder =()=>{
          isMenuOpen(!menuOpen);
+     }
+     const displayMenu =(props)=>{
+        isMenuOpen(props)
      }
 return (
     <Fragment>
@@ -17,10 +21,9 @@ return (
         <div className={classes.bigBlock}>
         <div className={classes.header}>
         <div className={classes.name}>Rohit</div>
+          { menuOpen && <NavBar menuBar={displayMenu}/>}
         <div className={classes.drop}>
-    
         {menuOpen?<img src={menuCLose} onClick={changeMenuHanlder}/> :<img src={menu} onClick={changeMenuHanlder}/>}
-
         </div>
         </div>
         <div className={classes.content}>
