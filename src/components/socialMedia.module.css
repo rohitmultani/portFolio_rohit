@@ -1,0 +1,55 @@
+.icon{
+    position: fixed;
+    bottom:2vh;
+    left:1vw;
+    animation: imageGlow 2s 1s ease both;
+}
+
+.vBlock{
+    height: 120px;
+    width: 2px;
+margin-left: 10px;
+    background-color: brown;
+}
+.text{
+    color:brown;
+    position: fixed;
+    bottom:42vh;
+    left:88vw;
+    transform:rotate(0.25turn);
+    animation: imageGlow 2s 1s ease both;
+}
+     
+
+.text a{
+    text-decoration: none;
+    color: brown;
+    font-size:20px
+}
+.vBlock2{
+    position: fixed;
+    bottom:3vh;
+    right: 2.2vw;
+    height: 120px;
+    width: 2px;
+/* margin-left: 10px; */
+    background-color: brown;
+    animation: imageGlow 2s 1s ease both;
+
+}
+@keyframes imageGlow {
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 50%;
+      }
+      100% {
+        opacity: 100%;
+      }
+}
+@media screen and (min-width:300px)and (max-width:720px){
+    .icon,.text,.vBlock2{
+      display:none;
+    }
+  }

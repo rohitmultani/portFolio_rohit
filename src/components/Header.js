@@ -1,10 +1,16 @@
-import React,{Fragment} from "react";
+import React,{Fragment,useState} from "react";
 import logo from'../Images/rohit.jpeg'
 import classes from "./Header.module.css";
 import menu from '../svg/menu.svg'
+import menuCLose from '../svg/menuClose.svg'
+import SocialMedia from "./socialMedia";
 // import classes from "./Main.module.css";
 
  const Header =()=>{
+     const [menuOpen,isMenuOpen]=useState(false);
+     const changeMenuHanlder =()=>{
+         isMenuOpen(!menuOpen);
+     }
 return (
     <Fragment>
         {/* <img src={logo}  className={classes.image}/ > */}
@@ -12,8 +18,10 @@ return (
         <div className={classes.header}>
         <div className={classes.name}>Rohit</div>
         <div className={classes.drop}>
+    
+        {menuOpen?<img src={menuCLose} onClick={changeMenuHanlder}/> :<img src={menu} onClick={changeMenuHanlder}/>}
+
         </div>
-            <img src={menu}/>
         </div>
         <div className={classes.content}>
             <div>
@@ -28,6 +36,7 @@ return (
             </div>
           </div>
           </div>
+          <SocialMedia/>
     </Fragment>
 )
  };

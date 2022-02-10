@@ -1,0 +1,12 @@
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding:4%;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:4%;
+}
