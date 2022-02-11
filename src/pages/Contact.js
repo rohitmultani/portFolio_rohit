@@ -29,7 +29,10 @@ const Contact = () => {
               rel="noreferrer"
               style={{ color: "black" }}
             >
-              <img src={github} alt="github" /> See my Open Source Contribution
+              <img src={github} alt="github" /> 
+              <span className={classes.textValue}>
+              See my Open Source Contribution
+              </span>
             </a>
           </div>
           <div>
@@ -39,7 +42,10 @@ const Contact = () => {
               rel="noreferrer"
               style={{ color: "red" }}
             >
-              <img src={instagram} alt="instagram" /> Follow me On Instagram
+              <img src={instagram} alt="instagram" />
+              <span>
+               Follow me On Instagram
+               </span>
             </a>
           </div>
           <div>
@@ -49,7 +55,7 @@ const Contact = () => {
               rel="noreferrer"
               style={{ color: "ligthBlue" }}
             >
-              <img src={twitter} alt="twitter" /> Follow me on Twitter
+              <img src={twitter} alt="twitter" /><span>Follow me on Twitter</span>
             </a>
           </div>
           <div>
@@ -59,7 +65,7 @@ const Contact = () => {
               rel="noreferrer"
               style={{ color: "darkBlue" }}
             >
-              <img src={linkedln} alt="linkedln" /> Connect with me on linkedin
+              <img src={linkedln} alt="linkedln" /> <span>Connect with me on linkedin</span>
             </a>
           </div>
           <div>
@@ -69,7 +75,7 @@ const Contact = () => {
               rel="noreferrer"
             >
               <img src={facebook} alt="facebook" />
-              Like me on facebook
+              <span> Like me on facebook</span>
             </a>
           </div>
           <div>
@@ -79,14 +85,14 @@ const Contact = () => {
               rel="noreferrer"
               style={{ color: "green" }}
             >
-              <img src={whatsapp} alt="whatsapp" /> Chat with me on Whatsapp
+              <img src={whatsapp} alt="whatsapp" /><span> Chat with me on Whatsapp</span>
             </a>
           </div>
 
           <div className={classes.resume}>
             <a href={resume} download>
               <img src={download} alt="whatsapp" />
-              <button> Download Resume</button>
+              <button> <span>Download Resume </span></button>
             </a>
           </div>
         </div>
@@ -96,7 +102,7 @@ const Contact = () => {
         </div>
         <div className={classes.email}>
         <a href="mailto:rohitmultani153@gmail.com">
-        <img src={gmail} alt="gmail" /> <button>Email Me</button>
+        <img src={gmail} alt="gmail" /> <div><button>Email Me</button></div>
            </a>
         </div>
         </div>
