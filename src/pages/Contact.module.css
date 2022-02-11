@@ -1,0 +1,51 @@
+.heading{
+    text-align:center;
+    font-size: 30px;
+    padding: 2%;
+}
+.contactBlock{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    
+}
+.profile{
+    height: 250px;
+    width: 300px;
+    
+    /* border-radius: 100%; */
+    /* border:5px solid black; */
+    /* box-shadow: 2px 3px 2px rgb(26, 18, 18); */
+    animation: imageGlow 2s 1s ease both;
+}
+
+.resume button{
+    width: max-content;
+    height: 10%;
+    background-color: dimgray;
+    color: white;
+    font-size: 20px;
+    border: none;
+
+}
+.dp img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.resume button:hover{
+    background-color: rgb(10, 117, 117);
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.email button{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+}
+.rightContainer{
+    margin: 4% 0%;
+}
