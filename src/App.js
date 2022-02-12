@@ -7,8 +7,8 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <div>
-      {/* <Header/> */}
-      {/* <Skill/> */}
+      <Header/>
+      <Skill/>
       <Contact/>
   
     </div>
