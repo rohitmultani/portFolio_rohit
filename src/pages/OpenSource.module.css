@@ -1,0 +1,28 @@
+.head{
+    text-align:center;
+    font-size: 30px;
+    padding: 2%;
+    font-weight: 700;
+}
+.stat img{
+    width: 50vw;
+    margin-top:2%;
+
+}
+.stat2 img{
+    height: 39vh;
+    width: 90vw;
+}
+.contribution{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media screen and (min-width:300px)and (max-width:720px){
+    .stat img{width: 100vw;
+        margin-bottom: 5%;
+    }
+    .stat2 img{
+        height: 30vh;
+    }
+  }
