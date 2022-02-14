@@ -10,6 +10,7 @@ import python from '../Images/python.png'
 const Skill =()=>{
     return(
         <Fragment>
+            <div className={classes.bigBlock}>
 <div className={classes.title}>
     Skills    
 </div>
@@ -34,6 +35,7 @@ const Skill =()=>{
 </div>
 <div><img src={python} alt="python"/></div>
 </div>
+        </div>
         </Fragment>
     );
 };
