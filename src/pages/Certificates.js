@@ -4,37 +4,30 @@ import resume from "../document/Resume.pdf";
 const Certificates = () => {
   return (
     <Fragment>
+      <div className={classes.block}>
       <div className={classes.head}>Certificates</div>
       <div className={classes.certificates}>
         <div className={classes.cBlock}>
-          <div className={classes.cName}>winner_final</div>
+          <div className={classes.cName}>Winner_final</div>
           <div className={classes.cCollege}>NSS IIT ROORKEE</div>
-          <div className={classes.cDate}>Issued Jun 2021</div>
-          <div className={classes.cID}>Credential ID 7PPXb06db7</div>
           <div className={classes.cButton}>
-              <button>See Credential</button>
+            <a href="https://netcredential.com/verify/7PPXb06db7">  <button>See Credential</button></a>
           </div>
         </div>
         <div className={classes.cBlock}>
-          <div className={classes.cName}></div>
-          <div className={classes.cCollege}></div>
-          <div className={classes.cDate}></div>
-          <div className={classes.cID}></div>
-          <div className={classes.cButton}></div>
+          <div className={classes.cName}>Workshop:Machine learning and Artificial intelligence by IBM</div>
+          <div className={classes.cCollege}>Cognizance, IIT Roorkee</div>
+          <div className={classes.cButton}>
+          <a href="https://netcredential.com/verify/nrwr67bdc8"> <button>See Credential</button></a>
+          </div>
         </div>
         <div className={classes.cBlock}>
-          <div className={classes.cName}></div>
-          <div className={classes.cCollege}></div>
-          <div className={classes.cDate}></div>
-          <div className={classes.cID}></div>
-          <div className={classes.cButton}></div>
+          <div className={classes.cName}>Workshop:Cognizance `21</div>
+          <div className={classes.cCollege}>Cognizance, IIT Roorkee</div>
+          <div className={classes.cButton}>
+          <a href="https://netcredential.com/verify/nrwr7d1102  ">   <button>See Credential</button></a>
+          </div>
         </div>
-        <div className={classes.cBlock}>
-          <div className={classes.cName}></div>
-          <div className={classes.cCollege}></div>
-          <div className={classes.cDate}></div>
-          <div className={classes.cID}></div>
-          <div className={classes.cButton}></div>
         </div>
       </div>
     </Fragment>

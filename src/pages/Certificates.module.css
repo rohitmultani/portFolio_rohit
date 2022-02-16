@@ -1,0 +1,34 @@
+.certificates{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.head{
+    text-align:center;
+    font-size: 50px;
+    padding: 2%;
+    font-weight: 700;
+}
+.cBlock{
+    text-align: center;
+    margin:5%;
+    max-width: 400px;
+
+}
+.cName{
+    font-size: 22px;
+    font-weight: 500;
+}
+.cButton button{
+    border-radius: 50%;
+    margin:1%;
+    height: 40px;
+    width: 120px;
+    border:1px solid black;
+}
+.block{
+    height: 100vh;
+}
+.cButton button:hover{
+    background: gray;
+}
