@@ -8,11 +8,13 @@ flex-wrap: wrap;
     font-size: 50px;
     padding: 2%;
     font-weight: 700;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .cBlock{
     text-align: center;
     margin:5%;
-    max-width: 400px;
+    max-width: 300px;
 
 }
 .cName{
@@ -21,7 +23,7 @@ flex-wrap: wrap;
 }
 .cButton button{
     border-radius: 50%;
-    margin:1%;
+    margin:2%;
     height: 40px;
     width: 120px;
     border:1px solid black;
@@ -30,5 +32,7 @@ flex-wrap: wrap;
     height: 100vh;
 }
 .cButton button:hover{
-    background: gray;
+    background:black;
+    color:white;
+    font-weight: 700;
 }
