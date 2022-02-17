@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useEffect } from "react";
 import classes from "./Contact.module.css";
 import contact from "../Images/contact.jpg";
 import github from "../Images/github.png";
@@ -12,17 +12,22 @@ import gmail from "../Images/gmail.png";
 import backg from "../Images/6530.jpg";
 import resume from "../document/Resume.pdf";
 import logo from '../Images/rohit.jpeg'
+import Aos from "aos";
+import "aos/dist/aos.css"
 import SocialHandler from "../components/SocialHandler";
 const Contact = () => {
+  useEffect(()=>{
+Aos.init({duration:2000});
+  },[]);
   return (
     <Fragment>
-        <div className={classes.heading}>Contact Me</div>
+        <div className={classes.heading} data-aos="zoom-in-down">Contact Me</div>
       <div className={classes.contactBlock}>
         <div className={classes.contactDetails}>
           <div className={classes.contactImage}>
-            <img src={contact} className={classes.profile} />
+            <img src={contact} className={classes.profile} data-aos="fade-right"/>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <a
               href="https://github.com/rohitmultani"
               target="_blank"
@@ -35,7 +40,7 @@ const Contact = () => {
               </span>
             </a>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <a
               href="https://github.com/rohitmultani"
               target="_blank"
@@ -48,7 +53,7 @@ const Contact = () => {
                </span>
             </a>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <a
               href="https://mobile.twitter.com/mr_rohit27"
               target="_blank"
@@ -58,7 +63,7 @@ const Contact = () => {
               <img src={twitter} alt="twitter" /><span>Follow me on Twitter</span>
             </a>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <a
               href="https://www.linkedin.com/in/rohit-multani-885b57213/"
               target="_blank"
@@ -68,7 +73,7 @@ const Contact = () => {
               <img src={linkedln} alt="linkedln" /> <span>Connect with me on linkedin</span>
             </a>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <a
               href="https://github.com/rohitmultani"
               target="_blank"
@@ -78,7 +83,7 @@ const Contact = () => {
               <span> Like me on facebook</span>
             </a>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <a
               href="https://api.whatsapp.com/send/?phone=918979337990&text=Hello"
               target="_blank"
@@ -89,7 +94,7 @@ const Contact = () => {
             </a>
           </div>
 
-          <div className={classes.resume}>
+          <div className={classes.resume} data-aos="fade-right">
             <a href={resume} download>
               <img src={download} alt="whatsapp" />
               <button> <span>Download Resume </span></button>
@@ -98,9 +103,9 @@ const Contact = () => {
         </div>
         <div className={classes.rightContainer}>
         <div className={classes.dp}>
-    <img src={logo} alt="dp"/>
+    <img src={logo} alt="dp" data-aos="fade-up"/>
         </div>
-        <div className={classes.email}>
+        <div className={classes.email} data-aos="fade-down">
         <a href="mailto:rohitmultani153@gmail.com">
         <img src={gmail} alt="gmail" /> <div><button>Email Me</button></div>
            </a>
