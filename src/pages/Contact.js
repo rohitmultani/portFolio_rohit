@@ -50,7 +50,7 @@ const Contact = () => {
           </div>
           <div>
             <a
-              href="https://github.com/rohitmultani"
+              href="https://mobile.twitter.com/mr_rohit27"
               target="_blank"
               rel="noreferrer"
               style={{ color: "ligthBlue" }}
