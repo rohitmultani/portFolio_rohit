@@ -9,9 +9,10 @@ const NavBar=(props)=>{
         <Fragment>
             <ul className={classes.bar}> 
                 <li onClick={changeMenuHandler}>Home</li>
-                <li>Certificates</li>
                 <li>Experience</li>
+                <li>Skills</li>
                 <li>Projects</li>
+                <li>Certificates</li>
                 <li>Open Source</li>
                 <li>Contact Me</li>
             </ul>
