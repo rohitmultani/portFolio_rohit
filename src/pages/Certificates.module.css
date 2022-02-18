@@ -15,6 +15,10 @@ flex-wrap: wrap;
     text-align: center;
     margin:5%;
     max-width: 300px;
+    border-radius: 3%;
+    background-color: chocolate;
+    border: 1px solid black;
+    padding:1%;
 
 }
 .cName{
@@ -28,9 +32,7 @@ flex-wrap: wrap;
     width: 120px;
     border:1px solid black;
 }
-.block{
-    height: 100vh;
-}
+
 .cButton button:hover{
     background:black;
     color:white;
