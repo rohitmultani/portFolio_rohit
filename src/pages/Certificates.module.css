@@ -10,6 +10,7 @@ flex-wrap: wrap;
     font-weight: 700;
     margin-top: 10%;
     margin-bottom: 10%;
+    color:white;
 }
 .cBlock{
     text-align: center;
@@ -37,4 +38,7 @@ flex-wrap: wrap;
     background:black;
     color:white;
     font-weight: 700;
+}
+.block{
+    background-color: #000002e1;
 }
