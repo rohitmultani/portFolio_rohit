@@ -1,10 +1,11 @@
 import React,{Fragment,useState} from "react";
-import logo from'../Images/rohit.jpeg'
+import logo from'../Images/rohitN.jpeg'
+import r from'../Images/iconR.png'
 import classes from "./Header.module.css";
-import menu from '../svg/menu.svg'
-import menuCLose from '../svg/menuClose.svg'
+// import menu from '../svg/menu.svg'
+// import menuCLose from '../svg/menuClose.svg'
 import SocialMedia from "./socialMedia";
-import NavBar from "./NavBar";
+// import NavBar from "./NavBar";
 // import classes from "./Main.module.css";
 
  const Header =(props)=>{
@@ -20,10 +21,10 @@ return (
         {/* <img src={logo}  className={classes.image}/ > */}
         <div className={classes.bigBlock}>
         <div className={classes.header}>
-        <div className={classes.name}>Rohit</div>
-          { menuOpen && <NavBar menuBar={displayMenu}/>}
+        <div className={classes.name}><img src={r} className={classes.rImage}/></div>
+          {/* { menuOpen && <NavBar menuBar={displayMenu}/>} */}
         <div className={classes.drop}>
-        {menuOpen?<img src={menuCLose} onClick={changeMenuHanlder}/> :<img src={menu} onClick={changeMenuHanlder}/>}
+        {/* {menuOpen?<img src={menuCLose} onClick={changeMenuHanlder}/> :<img src={menu} onClick={changeMenuHanlder}/>} */}
         </div>
         </div>
         <div className={classes.content}>
