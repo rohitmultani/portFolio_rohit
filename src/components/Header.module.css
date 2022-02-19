@@ -25,11 +25,12 @@
   font-family: monospace;
   display: flex;
   justify-content:space-evenly ;
+  flex-wrap: wrap-reverse;
 }
 .a1 {
   font-size: 24px;
   font-weight: 600;
-  padding: 0.5% 0%;
+  padding: 5% 0%;
   animation: rohitEffect 1s 1s ease both;
   animation: glowEffect 1s 1s ease both;
 }
@@ -76,6 +77,12 @@
     box-shadow: 2px 3px 2px rgb(26, 18, 18);
     animation: imageGlow 2s 1s ease both;
 }
+.rImage{
+  height: 80px;
+  width: 80px;
+  filter: invert(100%);
+  margin: 1%;
+}
 @keyframes rohitEffect {
   from {
     /* padding-left: 100%;
@@ -115,7 +122,11 @@
       }
 }
 @media screen and (min-width:300px)and (max-width:720px){
-  .profileImage{
+  /* .profileImage{
     display:none;
+  } */
+  .bigBlock{
+    height: max-content;
   }
+  
 }
