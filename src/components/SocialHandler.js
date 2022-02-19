@@ -20,7 +20,7 @@ const SocialHandler=()=>{
         </div>
         <div>
           <a
-            href="https://github.com/rohitmultani"
+            href="https://www.instagram.com/invites/contact/?i=1e06112izlkkd&utm_content=kkxzerz"
             target="_blank"
             rel="noreferrer"
           >
@@ -47,7 +47,7 @@ const SocialHandler=()=>{
         </div>
         <div>   
           <a
-            href="https://github.com/rohitmultani"
+            href="https://www.facebook.com/rohit.multani.71/"
             target="_blank"
             rel="noreferrer"
           >
