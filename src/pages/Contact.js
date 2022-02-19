@@ -9,15 +9,13 @@ import whatsapp from "../Images/whatsapp.png";
 import linkedln from "../Images/linkedln.png";
 import download from "../Images/download.png";
 import gmail from "../Images/gmail.png";
-import backg from "../Images/6530.jpg";
 import resume from "../document/Resume.pdf";
-import logo from '../Images/rohit.jpeg'
+import logo from '../Images/rohitN.jpeg'
 import Aos from "aos";
-import "aos/dist/aos.css"
-import SocialHandler from "../components/SocialHandler";
+import "aos/dist/aos.css";
 const Contact = () => {
   useEffect(()=>{
-Aos.init({duration:2000,offsetY:80});
+Aos.init({duration:2000,offsetY:60});
   },[]);
   return (
     <Fragment>
