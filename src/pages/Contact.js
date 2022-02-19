@@ -17,10 +17,11 @@ import "aos/dist/aos.css"
 import SocialHandler from "../components/SocialHandler";
 const Contact = () => {
   useEffect(()=>{
-Aos.init({duration:2000});
+Aos.init({duration:2000,offsetY:80});
   },[]);
   return (
     <Fragment>
+      <div className={classes.block}>
         <div className={classes.heading} data-aos="zoom-in-down">Contact Me</div>
       <div className={classes.contactBlock}>
         <div className={classes.contactDetails}>
@@ -42,7 +43,7 @@ Aos.init({duration:2000});
           </div>
           <div data-aos="fade-right">
             <a
-              href="https://github.com/rohitmultani"
+              href="https://www.instagram.com/invites/contact/?i=1e06112izlkkd&utm_content=kkxzerz"
               target="_blank"
               rel="noreferrer"
               style={{ color: "red" }}
@@ -75,7 +76,7 @@ Aos.init({duration:2000});
           </div>
           <div data-aos="fade-right">
             <a
-              href="https://github.com/rohitmultani"
+              href="https://www.facebook.com/rohit.multani.71/"
               target="_blank"
               rel="noreferrer"
             >
@@ -111,6 +112,7 @@ Aos.init({duration:2000});
            </a>
         </div>
         </div>
+      </div>
       </div>
     </Fragment>
   );
