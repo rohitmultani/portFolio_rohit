@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portFolio_rohit/static/css/main.ec449937.css",
+    "main.css": "/portFolio_rohit/static/css/main.9599e748.css",
     "main.js": "/portFolio_rohit/static/js/main.92395576.js",
     "static/media/rohitN.jpeg": "/portFolio_rohit/static/media/rohitN.b5ec0baff6cc0ba4e279.jpeg",
     "static/media/contact.jpg": "/portFolio_rohit/static/media/contact.7a9618aa60e649439340.jpg",
@@ -15,11 +15,11 @@
     "static/media/instagram.svg": "/portFolio_rohit/static/media/instagram.5fa2ca88ac9cf03ad8d49d51d4779d53.svg",
     "static/media/linkedln.svg": "/portFolio_rohit/static/media/linkedln.6b02712ce03f753e70673ba099a5a02c.svg",
     "static/media/facebook.svg": "/portFolio_rohit/static/media/facebook.a032ae33acd1f7e8134e42e51bf1e767.svg",
-    "main.ec449937.css.map": "/portFolio_rohit/static/css/main.ec449937.css.map",
+    "main.9599e748.css.map": "/portFolio_rohit/static/css/main.9599e748.css.map",
     "main.92395576.js.map": "/portFolio_rohit/static/js/main.92395576.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec449937.css",
+    "static/css/main.9599e748.css",
     "static/js/main.92395576.js"
   ]
 }
