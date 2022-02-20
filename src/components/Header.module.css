@@ -126,7 +126,7 @@
     display:none;
   } */
   .bigBlock{
-    height: max-content;
+    height: 100vh;
   }
   
 }
