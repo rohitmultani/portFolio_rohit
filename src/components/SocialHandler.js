@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import classes from "./socialMedia.module.css";
 import github from "../svg/github.svg";
 import facebook from "../svg/facebook.svg";
 import instagram from "../svg/instagram.svg";

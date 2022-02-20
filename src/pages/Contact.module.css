@@ -14,10 +14,6 @@
 .profile{
     height: 250px;
     width: 300px;
-    
-    /* border-radius: 100%; */
-    /* border:5px solid black; */
-    /* box-shadow: 2px 3px 2px rgb(26, 18, 18); */
     animation: imageGlow 2s 1s ease both;
 }
 
@@ -63,3 +59,11 @@ a{
 .rightContainer{
     margin: 4% 0%;
 }
+.block{
+    margin-bottom: 15%;
+}
+@media screen and (min-width:300px)and (max-width:720px){
+    .block{
+        margin-bottom: 30%;
+    }
+  }

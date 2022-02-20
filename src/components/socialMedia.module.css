@@ -15,7 +15,7 @@ margin-left: 10px;
     color:brown;
     position: fixed;
     bottom:42vh;
-    left:88vw;
+    left:87vw;
     transform:rotate(0.25turn);
     animation: imageGlow 2s 1s ease both;
 }

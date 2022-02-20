@@ -1,5 +1,8 @@
 import React, { Fragment } from "react";
 import classes from './NavBar.module.css';
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 const NavBar=(props)=>{
     const changeMenuHandler =()=>{
         props.menuBar(false);
@@ -8,13 +11,13 @@ const NavBar=(props)=>{
     return(
         <Fragment>
             <ul className={classes.bar}> 
-                <li onClick={changeMenuHandler}>Home</li>
-                <li>Experience</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Certificates</li>
-                <li>Open Source</li>
-                <li>Contact Me</li>
+                <li onClick={changeMenuHandler}> <Link to="/">Home</Link></li>
+                <li> <HashLink to="/#Experience">Experience</HashLink></li>
+                <li>< Link to="/Skills">Skills</Link></li>
+                <li>< Link to="/Projects">Projects</Link></li>
+                <li ><Link to="/Certificates">Certificates</Link></li>
+                <li><Link to="/OpenSource">Open Source</Link></li>
+                <li><Link to="/Contact"> Contact Me</Link></li>
             </ul>
         </Fragment>
     );
