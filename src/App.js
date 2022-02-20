@@ -15,7 +15,7 @@ function App() {
       <Header/>
       <Experience/> 
       <Skill/>  
-      {/* <Projects/> */}
+      <Projects/>
       <OpenSource/>
       <Certificates/>
       <Contact/>
