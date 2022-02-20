@@ -12,14 +12,14 @@ import Experience from './pages/Experience';
 function App() {
   return (
     <div>
-      <Header/>
-      <Experience/> 
-      <Skill/>  
-      <Projects/>
-      <OpenSource/>
+//       <Header/>
+//       <Experience/> 
+//       <Skill/>  
+//       <Projects/>
+//       <OpenSource/>
       <Certificates/>
       <Contact/>
-      <Footer/>
+//       <Footer/>
   
     </div>
       );
