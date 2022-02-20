@@ -15,11 +15,11 @@ function App() {
       <Header/>
       <Experience/> 
       <Skill/>  
-//       <Projects/>
-//       <OpenSource/>
-//       <Certificates/>
-//       <Contact/>
-//       <Footer/>
+      <Projects/>
+      <OpenSource/>
+      <Certificates/>
+      <Contact/>
+      <Footer/>
   
     </div>
       );
