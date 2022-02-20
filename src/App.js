@@ -12,13 +12,13 @@ import Experience from './pages/Experience';
 function App() {
   return (
     <div>
-//       <Header/>
-//       <Experience/> 
-//       <Skill/>  
+      <Header/>
+      <Experience/> 
+      <Skill/>  
 //       <Projects/>
 //       <OpenSource/>
-      <Certificates/>
-      <Contact/>
+//       <Certificates/>
+//       <Contact/>
 //       <Footer/>
   
     </div>
