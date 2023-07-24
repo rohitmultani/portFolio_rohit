@@ -20,7 +20,7 @@ const Contact = () => {
           <div className={classes.contactDetails}>
             <div className={classes.b1}>
               <a
-                href="https://github.com/rohitmultani"
+                href="mailto:rohitmultani153@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: "white" }}
