@@ -1,52 +1,52 @@
-import React,{Fragment,useEffect} from "react";
-import classes from './Projects.module.css';
-import clock from '../Images/clock.jpeg'
-import calculator from '../Images/calculator.jpeg'
-import userlist from '../Images/userlist.jpeg'
-import github from "../Images/github.png";
-import chrome from "../Images/chrome.png";
-import Aos from "aos";
-import "aos/dist/aos.css"
-const Projects =()=>{
-    useEffect(()=>{
-        Aos.init({duration:1000});
-          },[]);
-    return(
+import React, { Fragment, useEffect, useState } from "react";
+import classes from "./Projects.module.css";
+import ProjectBlock from "../components/ProjectBlock";
+import hotstar from "../Images/hotstarl.png";
+import hackathon from "../Images/Screenshot (2334).png";
+import estate from "../Images/Screenshot (2336).png";
+import profile from "../Images/Screenshot (2341).png";
+import { VerticalTimeline } from "react-vertical-timeline-component";
+const Projects = () => {
+  const resolution = window.innerWidth;
+  const [isMobile, setMobile] = useState(false);
+  useEffect(() => {
+    if (resolution >= 320 && resolution <= 720) {
+      setMobile(true);
+    }
+  }, [resolution]);
+
+  return (
     <Fragment>
-              <div className={classes.head} data-aos="zoom-in-down">Projects</div>
-              <div className={classes.Projects}>
-                  <div className={classes.card} >
-                      <img src={clock} alt="clock" data-aos="fade-up"></img>
-                  <div className={classes.hiddenCard}>Alarm Clock(JavaScript)
-                  <div>
-                      <span><a href="https://github.com/rohitmultani/Alarm-clock" target="_blank"><img src={github} alt="github"/></a></span>
-                      <span><a href="https://rohitmultani.github.io/Alarm-clock/"target="_blank"><img src={chrome} alt="chrome"/></a></span>
-                  </div>
-                  </div>   
-                  </div>
-                  <div className={classes.card}>
-                  <img src={calculator} alt="calculator" data-aos="fade-down">
-                  </img>
-                  <div className={classes.hiddenCard}>Calculator(JavaScript)
-                  <div>
-                      <span>
-                         <a href="https://github.com/rohitmultani/Javascript__Calculator"target="_blank"><img src={github} alt="github"/></a></span>
-                      <span><a href="https://rohitmultani.github.io/Javascript__Calculator/"target="_blank"><img src={chrome} alt="chrome"/></a></span>
-                  </div>
-                  </div>  
-                   
-                  </div>
-                  <div className={classes.card}>
-                  <img src={userlist} alt="use;ist" data-aos="fade-up"></img>
-                  <div className={classes.hiddenCard}>UserList(React.Js)
-                  <div>
-                      <span><a href="https://github.com/rohitmultani/user-list"target="_blank"><img src={github} alt="github"/></a></span>
-                      <span><a href="https://rohitmultani.github.io/user-list/"target="_blank"><img src={chrome} alt="chrome"/></a></span>
-                  </div>
-                  </div>   
-                  </div>
-                  
-              </div>
-    </Fragment>)
+      <div className={classes.projects}>
+        <div className={classes.head}>Projects</div>
+        <VerticalTimeline animate={!isMobile}>
+          <ProjectBlock
+            pImg={hotstar}
+            duration={"HotStar Clone"}
+            linkGit={"https://github.com/rohitmultani/DisneyHotstar-Clone"}
+            site={"https://rohithotstarclone.netlify.app/"}
+          />
+          <ProjectBlock
+            pImg={hackathon}
+            duration={"Hacthon Orgniser"}
+            linkGit={"https://github.com/rohitmultani/Hackathon_organizer"}
+            site={"https://rohitmultani.github.io/Hackathon_organizer/##/"}
+          />
+          <ProjectBlock
+            pImg={estate}
+            duration={"RealEstate Site"}
+            linkGit={"https://github.com/rohitmultani/RealEstateSite"}
+            site={"https://rohitmultani.github.io/RealEstateSite/"}
+          />
+          <ProjectBlock
+            pImg={profile}
+            duration={"PortFolio"}
+            linkGit={"https://github.com/rohitmultani/portFolio_rohit"}
+            site={"https://rohitmultani.github.io/portFolio_rohit/"}
+          />
+        </VerticalTimeline>
+      </div>
+    </Fragment>
+  );
 };
 export default Projects;

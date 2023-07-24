@@ -1,8 +1,9 @@
 .heading{
     text-align:center;
-    font-size: 70px;
+    font-size: 50px;
     padding: 2%;
-    font-weight: 700;
+    font-weight: 500;
+    color:yellow;
 }
 .contactBlock{
     display: flex;
@@ -21,7 +22,7 @@
     width: max-content;
     height: 10%;
     background-color: dimgray;
-    color: white;
+    /* color: white; */
     font-size: 20px;
     border: none;
 
@@ -29,7 +30,6 @@
 .dp img{
     width: 200px;
     height: 200px;
-    border-radius: 100%;
 }
 .resume button:hover{
     background-color: rgb(10, 117, 117);
@@ -59,11 +59,13 @@ a{
 .rightContainer{
     margin: 4% 0%;
 }
-.block{
-    margin-bottom: 15%;
+.textValue{
+    font-size: 20px;
 }
-@media screen and (min-width:300px)and (max-width:720px){
-    .block{
-        margin-bottom: 30%;
-    }
-  }
+.block{
+    background-color: #000002e1;
+}
+.contactBlock a{
+    display: flex;
+    align-items: center;
+}

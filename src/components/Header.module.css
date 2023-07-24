@@ -15,7 +15,6 @@
 .bigBlock {
   height: 100vh;
   background-color: #000002e1;
-  
 }
 
 .content {
@@ -24,7 +23,7 @@
   padding-top: 8%;
   font-family: monospace;
   display: flex;
-  justify-content:space-evenly ;
+  justify-content: space-evenly;
   flex-wrap: wrap-reverse;
 }
 .a1 {
@@ -57,27 +56,44 @@
   animation: rohitEffect 1.6s 1s ease both;
   animation: glowEffect 1s 1s ease both;
 }
-.a5 {
-  font-size: 20px;
+/* .a5 {
+  font-size: 30px;
   font-weight: 300;
   padding: 1% 0%;
   color: #7d7ebe;
+  overflow: hidden;
+  white-space: nowrap;
   animation: rohitEffect 2s 1s ease both;
   animation: glowEffect 1s 1s ease both;
+
+  animation: type 2s steps(10,end) forwards;
+} */
+.a5 {
+  color: #355c7d;
+  font-family: "Fira Code", monospace;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 300px;
+  animation: type 3s steps(40, end) forwards;
 }
-.a3 span {
+
+.a3 span,
+.a5 span {
   color: yellow;
 }
-.profileImage{
-    height: 200px;
-    width: 250px;
-    
-    border-radius: 100%;
-    /* border:5px solid black; */
-    box-shadow: 2px 3px 2px rgb(26, 18, 18);
-    animation: imageGlow 2s 1s ease both;
+.profileImage {
+  height: 400px;
+  width: 250px;
+
+  /* border-radius: 100%; */
+  /* border:5px solid black; */
+  /* box-shadow: 2px 3px 2px rgb(26, 18, 18); */
+  animation: imageGlow 2s 1s ease both;
 }
-.rImage{
+.rImage {
   height: 80px;
   width: 80px;
   filter: invert(100%);
@@ -87,7 +103,7 @@
   from {
     /* padding-left: 100%;
      */
-     transform: translateX(-200%);
+    transform: translateX(-200%);
   }
   to {
     transform: translateX(0px);
@@ -111,22 +127,63 @@
   }
 }
 @keyframes imageGlow {
-    0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 50%;
-      }
-      100% {
-        opacity: 100%;
-      }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
-@media screen and (min-width:300px)and (max-width:720px){
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%,
+  99% {
+    border-right: 1px solid orange;
+  }
+  100% {
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 720px) {
   /* .profileImage{
     display:none;
   } */
-  .bigBlock{
-    height: 100vh;
+  .bigBlock {
+    height: fit-content;
   }
-  
 }
