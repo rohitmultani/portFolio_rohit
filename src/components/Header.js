@@ -20,14 +20,14 @@ const Header = (props) => {
             <div className={classes.a2}>Rohit Multani</div>
             <div className={classes.a5}>
               {" "}
-              <span> Frontend Developer</span>
+              <span> Software Developer</span>
             </div>
             <div className={classes.a3}>
               Pursuing <span> Computer Science & Engineering</span>
             </div>
             <div className={classes.a4}>
               {" "}
-              at Harcout Butler Technical University, Kanpur
+              at Harcourt Butler Technical University, Kanpur
             </div>
           </div>
           <div>

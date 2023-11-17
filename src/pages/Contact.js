@@ -8,7 +8,7 @@ import whatsapp from "../Images/whatsapp.png";
 import linkedln from "../Images/linkedln.png";
 import download from "../Images/download.png";
 import gmail from "../Images/gmail.png";
-import resume from "../document/FAANGPath_Simple_Template (11).pdf";
+import resume from "../document/Rohit_Multani_Resume.pdf";
 import logo from "../Images/result.png";
 import "aos/dist/aos.css";
 const Contact = () => {
